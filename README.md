@@ -1,9 +1,7 @@
 slim6_manifest
 ================
 
-TESTING Local Manifest to TEST build Slim6 for the Huawei Y300/G510/G330
-Assume: There is small diff between SlimLP-Y300 and CM13-Y300 (except kernel)!
-        How about to use slimlp_huawei.xml to build Slim6-Y300 ?!
+All credits goes to chil360. This is just forked local manifest for TESTING Slim6 rom for Huawei Y300.
 
 Build Instructions
 -----------------------------------------------------------------------------
