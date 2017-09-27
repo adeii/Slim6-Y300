@@ -1,34 +1,30 @@
-slim6_manifest
+slimkat_manifest - experimental build with best from CAF build to legacy-display build
 ================
 
-All credits goes to chil360. This is just forked local manifest for TESTING Slim6 rom for Huawei Y300.
+Local Manifest to build SlimKat for the Huawei Y300, G330 & G510
 
-Build Instructions
+Build Instructions for SlimKat Y300 (U8833), G330 (U8825) & G510 (U8951)
 -----------------------------------------------------------------------------
 
-1. Initialize repo using the Slim6 manifest (CAF branch)
+1. Initialize repo using the SlimKat manifest (legacy display branch)
     
-        repo init -u git://github.com/SlimRoms/platform_manifest.git -b mm6.0
+        repo init -u git://github.com/adeii/Slim6-Y300.git -b kklegacy
 
-2. Add my local manifest
-
-        mkdir .repo/local_manifests
-        Copy slim6_huawei.xml to .repo/local_manifests
-
-3. Then sync up the repositories
+2. Then sync up the repositories
  
-        repo sync
+        repo sync --force-sync --no-tags --no-clone-bundle -f
+
+3. Some patching needing here (to original projects) and delete all "...y300" projects 
 
 4. Initialize the build environment
 
-        source build/envsetup.sh
+        . build/envsetup.sh
     
-5. If everything is OK, build the ROM
+5. Build the ROM
 
+        For G330:
+            brunch u8825
         For Y300:
             brunch u8833
         For G510:
             brunch u8951
-        For G330:
-            brunch u8825
-6. Disclaimer - I'm not responding if this can not compile, build, etc. etc. or distroy your Huawei or bootloop or etc. etc.
